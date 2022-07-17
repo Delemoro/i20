@@ -1,0 +1,365 @@
+html {
+    font-size: 62.5%;
+}
+
+@import url(fonts/circe/);
+
+@font-face {
+    font-family: Circle;
+    src: url(fonts/circe/circe_300.woff);
+    font-weight: 300;
+    font-size: normal;
+} 
+
+@font-face {
+    font-family: Circle;
+    src: url(fonts/circe/circe_600.woff);
+    font-weight: 600;
+    font-size: normal;
+} 
+@font-face {
+    font-family: Circle;
+    src: url(fonts/circe/circe_700.woff);
+    font-weight: 700;
+    font-size: normal;
+} 
+
+body {
+    font: 1.65rem/1.2 Circle, sans-serif;
+    font-family: "Circle";
+    font-weight: 300;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.layout {
+    max-width: 1200px;
+    padding: 22px 0 70px 0;
+    margin: 0 auto;
+}
+
+.product {
+display: flex;
+justify-content: space-between; 
+margin: 5%; 
+}
+
+.product_preview {
+/* display: -ms-flexbox;
+display: flex; */
+margin-left: 15%;
+}
+
+.product_preview_main-img{
+    width: 340px;
+    height: 490px;
+    margin: 0 110px;
+}
+
+.product_preview_main-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.product_title {
+color: black;
+font-family: circle;
+font-size: 24px;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+
+}
+
+.product_description {
+    margin-left: auto;
+}
+
+.product_categories {
+    margin-top: 20px;
+    display: flex;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.13px;
+    flex-wrap: wrap;
+    color: #006be5;
+    
+}
+
+.product_categories a {
+    margin: 0 30px 15px 0;
+    color: inherit;
+    background-color: transparent;
+}
+
+.product_price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10%;
+
+}
+
+.product_price_actual {
+    margin: 0 60px 0 0; 
+   position: relative; 
+   display: flex;
+}
+
+.product_price_old {
+    color: gray;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: line-through;
+    margin: 0 10px 0 0;
+}
+
+.product_price_current_price {
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0 0 0;
+}
+
+.product_price_discount {
+    display: flex;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product_discount_value {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 17px 0 0;
+    
+}
+
+.product_discount_text {
+    color: gray;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.product_info {
+    max-width: 340px;
+    font-size: 13px;
+    padding: 15px 22px;
+    margin-top: 20px;
+    background: #f4f4f4; ;
+}
+
+.product_info_item {
+    display: -ms-flexbox;
+    display: inline-block;
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+.product_info_item a{
+    color: #006be5;
+    display: inline-block; 
+    margin-left: 5px;
+}
+
+
+.product_text {
+    max-width: 445px;
+    margin-top: 40px;
+    color: black;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.13px;
+}
+
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+}
+button {
+    display: inline-block;
+    color: #000000;
+    border: 2px solid #d9d9d9;
+    padding: 0 15px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:0.65px ;
+    min-width: 170px;
+    margin-top: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn_blue {
+    color: #fff;
+    background-color: #006be5;
+    border: 2px solid #006be5;
+}
+
+
+ /*
+.price::after {
+    content: "p";
+    display: inline-block;
+    position: absolute;
+    right: -14px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+*/
+
+.product_share {
+    color: #131313;
+    font-size: 13px;
+    font-weight: 380;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.65px;
+    margin-top: 35px;
+}
+
+
+
+
+.product_share_list a:not(:last-child) {
+    margin: 0 13px 0 0;
+}
+
+.product_share_count {
+    margin: 0 0 0 13px;
+    padding: 10px;
+    background-color: #efefef;
+    position: relative; 
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+    margin: 10%;
+}
+.type-image {
+    margin-left: 0;
+    padding-top: 10%;
+}
+
+.slider-product {
+    margin-left: 20%;
+}
+.slider_wrapper {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.number {
+	user-select: none;
+	position: relative;
+	text-align: left;
+	padding: 0;
+	width: 140px;
+	border: 1px solid #ddd;
+	display: flex;
+    margin-top: 30px;
+}
+.number-minus, .number-plus {
+	position: absolute;
+	top: 0;
+	width: 40px;
+	height: 32px;
+	line-height: 32px;
+	display: block;
+	background: #faf4f2;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	font-family: arial;
+	color: #3e1e02;
+	text-decoration: none;
+}
+.number-minus {
+	left: 0;
+	border-right: 1px solid #ddd;
+}
+.number-plus {
+	right: 0;
+	border-left: 1px solid #ddd;
+}
+.number-minus:hover, .number-plus:hover {
+	background: #fffcfb;
+}
+.number-minus:active, .number-plus:active {
+	background: #e8e4e2;
+}
+.number-text{
+	display: inline-block;
+	font-size: 14px;
+	color: #000;
+	line-height: 32px;
+	height: 32px;
+	padding: 0;
+	margin: 0 0 0 42px;
+	background: #fff;
+	outline: none;
+	border: none;
+	width: 57px;
+	text-align: center;
+} 
+
+.type-image {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    }
+    
+   .type-image:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
